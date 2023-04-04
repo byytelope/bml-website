@@ -38,7 +38,7 @@ export default function Whistleblowing() {
             ))}
           </ul>
         </div>
-        <div className="rounded-xl drop-shadow-xl bg-white w-full h-96 mt-24">
+        <div className="rounded-xl drop-shadow-xl bg-white w-full mt-24 p-8">
           <Form />
         </div>
       </div>
