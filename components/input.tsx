@@ -9,7 +9,7 @@ export default function Input({ wide = false, ...props }: InputProps) {
       placeholder={
         props.required ? props.placeholder + " *" : props.placeholder
       }
-      className={`border-gray-300 focus-within:ring-gray-500 focus-within:border-gray-500  transition-colors rounded-md ${
+      className={`border-gray-300 focus-visible:ring-gray-500 focus-visible:border-gray-500 transition-colors rounded-md ${
         wide && "w-full"
       }`}
     />
