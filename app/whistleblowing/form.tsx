@@ -16,16 +16,21 @@ export default function Form() {
       transition={{ bounce: 0.3 }}
       layout
     >
-      <h3 className="font-bold text-3xl pb-8">Give us all the details</h3>
-      <form className="flex flex-col justify-start gap-4">
-        <div className="flex space-x-4">
-          <span>Anonymous</span>
-          <Toggle
-            label="Make submission anonymous"
-            checked={isAnonymous}
-            onChange={setIsAnonymous}
-          />
+      <div className="flex flex-col pb-8 gap-4">
+        <div className="flex justify-between">
+          <h3 className="font-bold text-3xl">Give us all the details</h3>
+          <div className="flex justify-center gap-4 w-fit p-2 rounded-md">
+            <span className="font-medium text-sm">Anonymous</span>
+            <Toggle
+              label="Make submission anonymous"
+              checked={isAnonymous}
+              onChange={setIsAnonymous}
+            />
+          </div>
         </div>
+        <h4>Whistleblow directly to the director of Bank of Maldives.</h4>
+      </div>
+      <form className="flex flex-col justify-start gap-4">
         <motion.div
           className="flex flex-col gap-4"
           animate={
@@ -44,11 +49,11 @@ export default function Form() {
           }
           transition={{ ease: "easeInOut" }}
         >
-          <Input type="text" placeholder="Name" />
-          <Input type="email" placeholder="Email" />
+          <Input type="text" placeholder="Name" name="name" />
+          <Input type="email" placeholder="Email" name="email" />
         </motion.div>
-        <Input type="text" placeholder="Case subject" required />
-        <TextArea placeholder="Your message" required />
+        <Input type="text" placeholder="Case subject" name="subject" required />
+        <TextArea placeholder="Your message" name="message" required />
         <Button type="submit" onClick={(e) => e.preventDefault()}>
           Submit
         </Button>

@@ -6,4 +6,8 @@
   *:focus-visible {
     @apply outline-none ring-2 ring-offset-1 ring-offset-inherit ring-gray-500;
   }
+
+  ul {
+    @apply list-image-[url(./bullet.svg)];
+  }
 }

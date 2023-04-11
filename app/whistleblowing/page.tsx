@@ -30,7 +30,7 @@ export default function Whistleblowing() {
             Under the Bank&apos;s Whistleblowing Policy, a{" "}
             <span className="underline">Whistle</span> shall mean and include:
           </p>
-          <ul className="list-image-[url(/bullet.svg)]">
+          <ul>
             {whistleExamples.map((whistle, i) => (
               <li key={"whistle" + i} className="font-light ml-3 pl-3 py-2">
                 {whistle}

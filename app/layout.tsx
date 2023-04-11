@@ -5,10 +5,10 @@ import "./globals.css";
 
 const sofiaPro = localFont({
   src: [
-    { path: "fonts/SofiaPro-Light.woff2", weight: "300", style: "normal" },
-    { path: "fonts/SofiaProRegular.woff2", weight: "400", style: "normal" },
-    { path: "fonts/SofiaPro-Medium.woff2", weight: "500", style: "normal" },
-    { path: "fonts/SofiaPro-Bold.woff2", weight: "700", style: "normal" },
+    { path: "SofiaPro-Light.woff2", weight: "300", style: "normal" },
+    { path: "SofiaProRegular.woff2", weight: "400", style: "normal" },
+    { path: "SofiaPro-Medium.woff2", weight: "500", style: "normal" },
+    { path: "SofiaPro-Bold.woff2", weight: "700", style: "normal" },
   ],
   display: "swap",
   variable: "--font-sofia-pro",
