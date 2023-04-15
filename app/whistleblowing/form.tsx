@@ -12,14 +12,17 @@ export default function Form() {
 
   return (
     <motion.div
-      className="rounded-xl shadow-xl bg-white w-full mt-24 p-8"
+      className="rounded-xl md:shadow-xl bg-white w-full mt-24 md:p-8"
       transition={{ bounce: 0.3 }}
       layout
     >
       <div className="flex flex-col pb-8 gap-4">
-        <div className="flex justify-between">
+        <div className="flex flex-col lg:flex-row justify-between">
           <h3 className="font-bold text-3xl">Give us all the details</h3>
-          <div className="flex justify-center gap-4 w-fit p-2 rounded-md">
+          <h4 className="lg:hidden py-2">
+            Whistleblow directly to the director of Bank of Maldives.
+          </h4>
+          <div className="flex justify-center gap-4 w-fit py-2 rounded-md">
             <span className="font-medium text-sm">Anonymous</span>
             <Toggle
               label="Make submission anonymous"
@@ -28,7 +31,9 @@ export default function Form() {
             />
           </div>
         </div>
-        <h4>Whistleblow directly to the director of Bank of Maldives.</h4>
+        <h4 className="hidden lg:block">
+          Whistleblow directly to the director of Bank of Maldives.
+        </h4>
       </div>
       <form className="flex flex-col justify-start gap-4">
         <motion.div

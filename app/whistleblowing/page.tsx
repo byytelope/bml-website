@@ -15,9 +15,9 @@ export default function Whistleblowing() {
   ];
 
   return (
-    <section className="min-h-[calc(100vh-5rem)] w-full flex flex-col items-center">
-      <div className="mt-24 mb-48 p-16 max-w-screen-lg text-center space-y-4 rounded-xl">
-        <h1 className="font-bold text-7xl">Whistleblowing</h1>
+    <section className="min-h-[calc(100vh-5rem)] w-full px-4 md:px-8 flex flex-col items-center">
+      <div className="mt-24 mb-48 md:p-16 max-w-screen-lg text-center space-y-4 rounded-xl">
+        <h1 className="font-bold text-5xl lg:text-7xl">Whistleblowing</h1>
         <p className="text-xl">
           Help us maintain the highest standard of accountability and probity by
           raising your concerns with us directly.
@@ -25,7 +25,9 @@ export default function Whistleblowing() {
       </div>
       <div className="max-w-screen-md w-full">
         <div className="space-y-4">
-          <h2 className="font-bold text-5xl">What is a &quot;whistle&quot;?</h2>
+          <h2 className="font-bold text-3xl lg:text-5xl">
+            What is a &quot;whistle&quot;?
+          </h2>
           <p className="text-lg">
             Under the Bank&apos;s Whistleblowing Policy, a{" "}
             <span className="underline">Whistle</span> shall mean and include:
